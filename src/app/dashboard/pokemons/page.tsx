@@ -4,8 +4,13 @@ import { SimplePokemon } from "@/app/pokemons/interfaces/simple-pokemon";
 import Image from "next/image";
 
 
+export const metadata = {
+ title: '151 Pokemons',
+ description: '151 Pokemons',
+};
+
 const getPokemons = async (
-  limit = 20,
+  limit = 150,
   offset = 0
 ): Promise<SimplePokemon[]> => {
   const data: PokemonsResponse = await fetch(
@@ -17,7 +22,6 @@ const getPokemons = async (
     name: pokemon.name,
   }));
 
-  
   return pokemons;
 };
 
