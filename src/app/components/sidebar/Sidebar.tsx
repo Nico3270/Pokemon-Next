@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { GrDatabase } from "react-icons/gr";
-import { IoBrowsersOutline, IoCalculator, IoLogoReact } from "react-icons/io5";
+import { IoBrowsersOutline, IoCalculator, IoHeartOutline, IoLogoReact } from "react-icons/io5";
 import {
   MdOutlineCatchingPokemon,
   MdOutlineDashboardCustomize,
@@ -20,6 +20,12 @@ const menuItems = [
     icon: <IoCalculator size={40} />,
     title: "Counter",
     subtitle: "Contador Client Size",
+  },
+  {
+    path: "/dashboard/favorites",
+    icon: <IoHeartOutline size={40} />,
+    title: "Pokemones favoritos",
+    subtitle: "Mis favoritos",
   },
   {
     path: "/dashboard/pokemons",
